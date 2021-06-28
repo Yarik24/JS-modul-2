@@ -73,7 +73,7 @@ class List {
 }
 
 class Item{
-    constructor(el, img = 'https://placehold.it/200x150'){
+    constructor(el, img = 'https://via.placeholder.com/200x150'){
         this.product_name = el.product_name;
         this.price = el.price;
         this.id_product = el.id_product;
@@ -186,7 +186,7 @@ class Cart extends List{
 }
 
 class CartItem extends Item{
-    constructor(el, img = 'https://placehold.it/50x100'){
+    constructor(el, img = 'https://via.placeholder.com/50x100'){
         super(el, img);
         this.quantity = el.quantity;
     }
