@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="text-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Rem accusamus quod a expedita dolores vel accusantium sed exercitationem illo quaerat cum reiciendis, 
+        optio eum sunt! Impedit voluptatem earum hic, ducimus dolor iusto id fugit dignissimos at repellat neque asperiores 
+        quia laboriosam quam dolore quibusdam ullam, illo libero porro quidem rem! Eligendi, culpa maxime accusantium error sed 
+        recusandae praesentium, aperiam soluta numquam debitis nemo delectus est ipsum tempora! Est quaerat quasi laudantium expedita, 
+        exercitationem animi, aut asperiores officia culpa, vitae molestiae! Sapiente quidem voluptatum reiciendis rem voluptates 
+        quia porro, fugit blanditiis, sed neque, recusandae ea! Animi harum blanditiis asperiores perspiciatis expedita.
+    </p>
+    <button id="replace">Replace</button>
+    <script>
+        let block = document.getElementById('text-container');
+        document.getElementById('replace').addEventListener('click', () => {
+//          block.textContent = block.textContent.replace(/'/g, '"');
+            block.textContent = block.textContent.replace(/\B'|'\B/g, '"');
+
+        });
+    </script>
+</body>
+
+</html>
